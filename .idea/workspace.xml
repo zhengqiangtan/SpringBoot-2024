@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b2350e-f1d9-47f0-bc23-ced1ffd3f8d1" name="Changes" comment="[ADD][lean-kafka] 新增kafka生产和消费部分示例">
-      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell/send-msg.sh" afterDir="false" />
+    <list default="true" id="08b2350e-f1d9-47f0-bc23-ced1ffd3f8d1" name="Changes" comment="[Question][lean-kafka] 获取不到已注册的监听器，待解决">
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/controller/KafkaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/service/KafkaListenerControlService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell/test_stop_listener.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/test/java/com/tan/kafka/UserMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean-kafka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/LeanKafkaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/LeanKafkaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/config/KafkaConsumerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/consumer/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/consumer/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell/send-msg-2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell/send-msg-2.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean-kafka/src/test/java/com/tan/kafka/KafkaMsgSendTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/test/java/com/tan/kafka/KafkaMsgSendTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +36,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "contexts": [
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
     {
-      "name": "docker-desktop"
+      &quot;name&quot;: &quot;docker-desktop&quot;
     }
   ],
-  "isMigrated": true
-}]]></component>
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="KubernetesSettings">
     <option name="contextName" value="docker-desktop" />
   </component>
@@ -42,10 +53,10 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2huHt1J0Q1UIyiOge3iu0nfMiTo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -55,9 +66,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
-    "Application.LeanKafkaApplication.executor": "Run",
+    "Application.LeanKafkaApplication.executor": "Debug",
     "Application.com.tan.kafka.App.executor": "Run",
     "JUnit.KafkaMsgSendTest.sendMsg.executor": "Run",
+    "JUnit.UserMapperTest.test.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -66,11 +78,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.send-msg-2.sh.executor": "Run",
     "Spring Boot.LeanKafkaApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-kafka/src/main",
+    "last_opened_file_path": "/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-kafka/src/main/java/com/tan/kafka/shell",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,23 +97,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell" />
       <recent name="$PROJECT_DIR$/lean-kafka/src/main" />
     </key>
   </component>
   <component name="RunManager" selected="Application.LeanKafkaApplication">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tan.App" />
-      <module name="lean-kafka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LeanKafkaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tan.kafka.LeanKafkaApplication" />
       <module name="lean-kafka" />
@@ -130,6 +131,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserMapperTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lean-kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tan.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tan.kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.tan.kafka.UserMapperTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="send-msg-2.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell/send-msg-2.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="LeanKafkaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="lean-kafka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tan.kafka.LeanKafkaApplication" />
@@ -146,9 +178,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.LeanKafkaApplication" />
+        <item itemvalue="JUnit.UserMapperTest.test" />
+        <item itemvalue="Shell Script.send-msg-2.sh" />
         <item itemvalue="JUnit.KafkaMsgSendTest.sendMsg" />
         <item itemvalue="Spring Boot.LeanKafkaApplication" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +201,8 @@
       <option name="presentableId" value="Default" />
       <updated>1718437255832</updated>
       <workItem from="1718437257327" duration="4425000" />
-      <workItem from="1718459343749" duration="2577000" />
+      <workItem from="1718459343749" duration="5020000" />
+      <workItem from="1718500013759" duration="5040000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD][lean-kafka] 新增kafka生产和消费部分示例">
       <option name="closed" value="true" />
@@ -178,14 +212,70 @@
       <option name="project" value="LOCAL" />
       <updated>1718459931221</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[ADD][lean-kafka] 新增kafka多个消费者">
+      <option name="closed" value="true" />
+      <created>1718462367947</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718462367947</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[ADD][lean-kafka] 新增事务性控制">
+      <option name="closed" value="true" />
+      <created>1718465615858</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718465615858</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[ADD][lean-kafka] 新增kafka生产和消费部分示例" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD][lean-kafka] 新增kafka生产和消费部分示例" />
+    <MESSAGE value="[ADD][lean-kafka] 新增kafka多个消费者" />
+    <MESSAGE value="[ADD][lean-kafka] 新增事务性控制" />
+    <MESSAGE value="[Question][lean-kafka] 获取不到已注册的监听器，待解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Question][lean-kafka] 获取不到已注册的监听器，待解决" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/config/KafkaTransactionSynchronization.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/controller/EventController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/controller/KafkaController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/service/KafkaListenerControlService.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

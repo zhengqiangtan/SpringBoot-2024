@@ -2,12 +2,14 @@ package com.tan.kafka.config;
 
 
 import com.tan.kafka.model.Event;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
+import org.springframework.kafka.config.KafkaListenerEndpointRegistry;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
@@ -17,8 +19,37 @@ import java.util.Map;
 
 @EnableKafka
 @Configuration
+@Slf4j
 public class KafkaConsumerConfig {
 
+    /**
+     * 创建一个Kafka监听器端点注册表，用于管理Kafka监听器。
+     *
+     * @return
+     */
+    @Bean
+    public KafkaListenerEndpointRegistry kafkaListenerEndpointRegistry() {
+        // 创建一个Kafka监听器端点注册表实例。
+        log.info("KafkaListenerEndpointRegistry created");
+        return new KafkaListenerEndpointRegistry();
+    }
+
+    @Bean
+    public ConcurrentKafkaListenerContainerFactory<String, Event> kafkaListenerContainerFactory(ConsumerFactory<String, Event> consumerFactory) {
+        ConcurrentKafkaListenerContainerFactory<String, Event> factory = new ConcurrentKafkaListenerContainerFactory<>();
+        factory.setConsumerFactory(consumerFactory);
+        log.info("KafkaListenerContainerFactory created 1...");
+        return factory;
+    }
+
+//    @Bean
+//    public ConcurrentKafkaListenerContainerFactory<String, Event> kafkaListenerContainerFactory() {
+//        ConcurrentKafkaListenerContainerFactory<String, Event> factory = new ConcurrentKafkaListenerContainerFactory<>();
+//        factory.setConsumerFactory(consumerFactory());
+//        log.info("KafkaListenerContainerFactory created 2...");
+//        return factory;
+//    }
+//
 
     /**
      * 创建一个Kafka消费者工厂，用于生产特定配置的Kafka消费者。
@@ -53,12 +84,17 @@ public class KafkaConsumerConfig {
      * 这个工厂配置了消费者工厂，用于创建Kafka消费者实例，这些消费者将用于监听Kafka主题上的事件。
      *
      * @return ConcurrentKafkaListenerContainerFactory<String, Event> 一个配置好的并发Kafka监听器容器工厂，
-     *         它可以用于创建并发的Kafka监听器容器，这些容器能够异步地处理Kafka主题上的Event消息。
+     * 它可以用于创建并发的Kafka监听器容器，这些容器能够异步地处理Kafka主题上的Event消息。
      */
-    @Bean
-    public ConcurrentKafkaListenerContainerFactory<String, Event> kafkaListenerContainerFactory() {
-        ConcurrentKafkaListenerContainerFactory<String, Event> factory = new ConcurrentKafkaListenerContainerFactory<>();
-        factory.setConsumerFactory(consumerFactory());
-        return factory;
-    }
+//    @Bean
+//    public ConcurrentKafkaListenerContainerFactory<String, Event> kafkaListenerContainerFactory() {
+//        ConcurrentKafkaListenerContainerFactory<String, Event> factory = new ConcurrentKafkaListenerContainerFactory<>();
+//        factory.setConsumerFactory(consumerFactory());
+//        return factory;
+//    }
+
+
+
+
+
 }

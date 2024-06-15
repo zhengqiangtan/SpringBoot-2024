@@ -1,5 +1,8 @@
 package com.tan.kafka.model;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,8 +17,11 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@TableName("event")
 public class Event {
-    private String id;
+    @TableId(type = IdType.AUTO, value = "id")
+    private Long id;
+    private String msgId;
     private String message;
 }
 

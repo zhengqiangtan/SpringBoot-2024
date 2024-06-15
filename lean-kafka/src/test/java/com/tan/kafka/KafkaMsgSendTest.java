@@ -18,7 +18,7 @@ public class KafkaMsgSendTest {
 
     @Test
     public void sendMsg() throws Exception {
-        eventProducer.sendMessage(new Event("110", "test msg " + new Random().nextInt(10000)));
+        eventProducer.sendMessage("events", new Event(1L, "110", "test msg " + new Random().nextInt(10000)));
 
     }
 
