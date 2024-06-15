@@ -5,29 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08b2350e-f1d9-47f0-bc23-ced1ffd3f8d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean-kafka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean-kafka/src/test/java/com/tan/kafka/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean-redis/src/main/java/com/tan/redis/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean-redis/src/test/java/com/tan/redis/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean_annotation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean_annotation/src/main/java/com/tan/annotation/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean_annotation/src/test/java/com/tan/annotation/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/consumer/EventConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/controller/EventController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/controller/PingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/mock/KafkaMsgSendMock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/model/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/producer/EventProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean-kafka/src/test/java/com/tan/kafka/KafkaMsgSendTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean-kafka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/LeanKafkaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean-kafka/src/test/java/com/tan/kafka/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,31 +43,51 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2huHt1J0Q1UIyiOge3iu0nfMiTo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Application.com.tan.kafka.App.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.tan.kafka.App.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.KafkaMsgSendTest.sendMsg.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.LeanKafkaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-kafka/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.com.tan.kafka.App">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lean-kafka/src/main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.KafkaMsgSendTest.sendMsg">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tan.App" />
       <module name="lean-kafka" />
@@ -76,9 +101,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.tan.kafka.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tan.kafka.App" />
+    <configuration name="LeanKafkaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tan.kafka.LeanKafkaApplication" />
       <module name="lean-kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tan.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaMsgSendTest.sendMsg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lean-kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tan.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tan.kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.tan.kafka.KafkaMsgSendTest" />
+      <option name="METHOD_NAME" value="sendMsg" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeanKafkaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="lean-kafka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tan.kafka.LeanKafkaApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tan.kafka.*" />
@@ -91,7 +145,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.tan.kafka.App" />
+        <item itemvalue="JUnit.KafkaMsgSendTest.sendMsg" />
+        <item itemvalue="Spring Boot.LeanKafkaApplication" />
+        <item itemvalue="Application.LeanKafkaApplication" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -111,7 +167,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718437255832</updated>
-      <workItem from="1718437257327" duration="740000" />
+      <workItem from="1718437257327" duration="4425000" />
+      <workItem from="1718459343749" duration="470000" />
     </task>
     <servers />
   </component>
