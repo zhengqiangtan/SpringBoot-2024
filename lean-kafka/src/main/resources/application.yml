@@ -42,3 +42,10 @@ spring:
       properties:
         spring.json.value.default.type: com.tan.kafka.model.Event
 
+
+# 配置主题和消费者组2
+kafka:
+  topic: events
+  group-2: events-group-2
+  group-3: events-group-3
+
