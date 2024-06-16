@@ -18,7 +18,6 @@ public class KafkaListenerControlService {
     @Autowired
     private KafkaListenerEndpointRegistry kafkaListenerEndpointRegistry;
 
-
     @PostConstruct
     public void checkListeners() {
         log.info("KafkaListenerControlService.checkListeners");

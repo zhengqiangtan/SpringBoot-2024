@@ -19,7 +19,7 @@ public class EventConsumer {
     public String groupId;
 
 //    /**
-//     * 写法 1：消费者组 1
+//     * 写法 1：指定具体消费者 topic,消费者组（这里消费者组可以覆盖消费者工厂中配置的消费者组）
 //     *
 //     * @param event
 //     */
@@ -30,7 +30,9 @@ public class EventConsumer {
 //
 //
 //    /**
-//     * 写法 1：消费者组 2
+//     * 写法 2：使用 SpEL（Spring Expression Language）进行动态属性解析
+//     *  Spring 使用 SpEL 来解析注解中的表达式。在 Spring Kafka 中，
+//     *  __listener 提供了一种方式来引用当前监听器 bean 的上下文，从而可以动态地访问和配置监听器的属性。
 //     *
 //     * @param message
 //     */
@@ -41,7 +43,7 @@ public class EventConsumer {
 //
 //
 //    /**
-//     * 写法 3：消费者组 3
+//     * 写法 3：指定不同的消费者组
 //     *
 //     * @param event
 //     */
@@ -49,27 +51,17 @@ public class EventConsumer {
 //    public void consume3(Event event) {
 //        System.out.println("Consumer group-3 consumed event: " + event);
 //    }
-//
-//
-//    /**
-//     * 写法 4：消费者消费数据并写入到 MySQL 中
-//     *
-//     * @param event
-//     */
-//    @KafkaListener(topics = "${kafka.topic}", groupId = "${kafka.group-4")
-//    public void consume4(Event event) {
-//        System.out.println("Consumer group-3 consumed event: " + event);
-//    }
 
 
     /**
-     * 写法 5：消费者暂停恢复测试
-     *
+     * 写法 4：
+     * 1. 设置 ID 方便启动、和停止消费者
+     * 2.可以指定 autoStartup 属性为 false，手动启动消费者,默认情况下是 true
      * @param event
      */
-    @KafkaListener(id = "eventListener", topics = "${kafka.topic}", groupId = "${kafka.group-5")
+    @KafkaListener(id = "eventListener", topics = "events_test", groupId = "default", autoStartup = "true")
     public void consume5(Event event) {
-        System.out.println("[event-listener] group-5 consumed event: " + event);
+        System.out.println("[event-listener] consumed event: " + event);
     }
 }
 

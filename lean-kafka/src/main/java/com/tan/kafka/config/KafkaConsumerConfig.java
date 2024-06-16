@@ -23,33 +23,18 @@ import java.util.Map;
 public class KafkaConsumerConfig {
 
     /**
-     * 创建一个Kafka监听器端点注册表，用于管理Kafka监听器。
-     *
+     * 创建一个Kafka消费者工厂，用于生产特定配置的Kafka消费者。
+     * @param consumerFactory
      * @return
      */
-    @Bean
-    public KafkaListenerEndpointRegistry kafkaListenerEndpointRegistry() {
-        // 创建一个Kafka监听器端点注册表实例。
-        log.info("KafkaListenerEndpointRegistry created");
-        return new KafkaListenerEndpointRegistry();
-    }
-
     @Bean
     public ConcurrentKafkaListenerContainerFactory<String, Event> kafkaListenerContainerFactory(ConsumerFactory<String, Event> consumerFactory) {
         ConcurrentKafkaListenerContainerFactory<String, Event> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory);
-        log.info("KafkaListenerContainerFactory created 1...");
+        log.info("KafkaListenerContainerFactory created.");
         return factory;
     }
 
-//    @Bean
-//    public ConcurrentKafkaListenerContainerFactory<String, Event> kafkaListenerContainerFactory() {
-//        ConcurrentKafkaListenerContainerFactory<String, Event> factory = new ConcurrentKafkaListenerContainerFactory<>();
-//        factory.setConsumerFactory(consumerFactory());
-//        log.info("KafkaListenerContainerFactory created 2...");
-//        return factory;
-//    }
-//
 
     /**
      * 创建一个Kafka消费者工厂，用于生产特定配置的Kafka消费者。
@@ -65,7 +50,7 @@ public class KafkaConsumerConfig {
         // 配置Kafka服务器的连接地址和端口。
         configProps.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         // 配置消费者的组ID，用于标识消费者属于哪个消费组。
-        configProps.put(ConsumerConfig.GROUP_ID_CONFIG, "events-group-1");
+        configProps.put(ConsumerConfig.GROUP_ID_CONFIG, "events-group");
 
         // 配置键和值的反序列化器，这里使用StringDeserializer和JsonDeserializer。
         // StringDeserializer用于反序列化键，JsonDeserializer用于反序列化值，并且信任所有包，设置默认值类型为Event类。
@@ -77,24 +62,4 @@ public class KafkaConsumerConfig {
         // 使用配置属性映射创建并返回一个默认的Kafka消费者工厂。
         return new DefaultKafkaConsumerFactory<>(configProps);
     }
-
-
-    /**
-     * 创建一个并发的Kafka监听器容器工厂，用于处理Event类型的消息。
-     * 这个工厂配置了消费者工厂，用于创建Kafka消费者实例，这些消费者将用于监听Kafka主题上的事件。
-     *
-     * @return ConcurrentKafkaListenerContainerFactory<String, Event> 一个配置好的并发Kafka监听器容器工厂，
-     * 它可以用于创建并发的Kafka监听器容器，这些容器能够异步地处理Kafka主题上的Event消息。
-     */
-//    @Bean
-//    public ConcurrentKafkaListenerContainerFactory<String, Event> kafkaListenerContainerFactory() {
-//        ConcurrentKafkaListenerContainerFactory<String, Event> factory = new ConcurrentKafkaListenerContainerFactory<>();
-//        factory.setConsumerFactory(consumerFactory());
-//        return factory;
-//    }
-
-
-
-
-
 }
