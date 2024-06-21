@@ -1,4 +1,4 @@
-package com.tan.annotation.do.annotation;
+package com.tan.annotation;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

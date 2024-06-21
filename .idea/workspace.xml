@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b2350e-f1d9-47f0-bc23-ced1ffd3f8d1" name="Changes" comment="[Question][lean-kafka] 获取不到已注册的监听器，待解决">
-      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/controller/KafkaController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell/create-topic.sh" afterDir="false" />
+    <list default="true" id="08b2350e-f1d9-47f0-bc23-ced1ffd3f8d1" name="Changes" comment="[add][lean-kafka] 解决启动和停止消费者的问题">
+      <change afterPath="$PROJECT_DIR$/lean_annotation/src/main/java/com/tan/annotation/bean/AutoDetectDemoBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean_annotation/src/main/java/com/tan/annotation/bean/IgnoreDemoBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean_annotation/src/main/java/com/tan/annotation/bean/IgnorePropertiesDemoBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean_annotation/src/main/java/com/tan/annotation/bean/IgnoreTypeDemoBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean_annotation/src/main/java/com/tan/annotation/bean/ValueDemoBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lean_annotation/src/test/java/com/tan/annotation/BeanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lean-kafka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/consumer/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/consumer/EventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/service/KafkaListenerControlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/service/KafkaListenerControlService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lean-kafka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lean-kafka/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean_annotation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lean_annotation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lean_annotation/src/test/java/com/tan/annotation/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lean_annotation/src/test/java/com/tan/annotation/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,38 +59,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LeanKafkaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.tan.kafka.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KafkaMsgSendTest.sendMsg.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserMapperTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Shell Script.send-msg-2.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LeanKafkaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-kafka/src/main/java/com/tan/kafka/shell&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.LeanKafkaApplication.executor": "Run",
+    "Application.com.tan.kafka.App.executor": "Run",
+    "JUnit.BeanTest.testDeSerializingWithJsonIgnore.executor": "Run",
+    "JUnit.BeanTest.testSerializingWithJsonIgnore.executor": "Run",
+    "JUnit.BeanTest.testSerializingWithJsonIgnoreProperties.executor": "Run",
+    "JUnit.BeanTest.testSerializingWithJsonValue.executor": "Run",
+    "JUnit.KafkaMsgSendTest.sendMsg.executor": "Run",
+    "JUnit.UserMapperTest.test.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.SpringBoot-2024 [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.send-msg-2.sh.executor": "Run",
+    "Spring Boot.LeanKafkaApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-kafka/src/main/java/com/tan/kafka/shell",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell" />
@@ -98,7 +105,7 @@
       <recent name="com.tan.kafka.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LeanKafkaApplication">
+  <component name="RunManager" selected="JUnit.BeanTest.testSerializingWithJsonValue">
     <configuration name="LeanKafkaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tan.kafka.LeanKafkaApplication" />
       <module name="lean-kafka" />
@@ -112,73 +119,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaMsgSendTest.sendMsg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lean-kafka" />
+    <configuration name="BeanTest.testDeSerializingWithJsonIgnore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lean_annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tan.kafka.*" />
+          <option name="PATTERN" value="com.tan.annotation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tan.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.tan.kafka.KafkaMsgSendTest" />
-      <option name="METHOD_NAME" value="sendMsg" />
+      <option name="PACKAGE_NAME" value="com.tan.annotation" />
+      <option name="MAIN_CLASS_NAME" value="com.tan.annotation.BeanTest" />
+      <option name="METHOD_NAME" value="testDeSerializingWithJsonIgnore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lean-kafka" />
+    <configuration name="BeanTest.testSerializingWithJsonIgnore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lean_annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tan.kafka.*" />
+          <option name="PATTERN" value="com.tan.annotation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tan.kafka" />
-      <option name="MAIN_CLASS_NAME" value="com.tan.kafka.UserMapperTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.tan.annotation" />
+      <option name="MAIN_CLASS_NAME" value="com.tan.annotation.BeanTest" />
+      <option name="METHOD_NAME" value="testSerializingWithJsonIgnore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="send-msg-2.sh" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell/send-msg-2.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/lean-kafka/src/main/java/com/tan/kafka/shell" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="LeanKafkaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="lean-kafka" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tan.kafka.LeanKafkaApplication" />
+    <configuration name="BeanTest.testSerializingWithJsonIgnoreProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lean_annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tan.kafka.*" />
+          <option name="PATTERN" value="com.tan.annotation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.tan.annotation" />
+      <option name="MAIN_CLASS_NAME" value="com.tan.annotation.BeanTest" />
+      <option name="METHOD_NAME" value="testSerializingWithJsonIgnoreProperties" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanTest.testSerializingWithJsonValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lean_annotation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tan.annotation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tan.annotation" />
+      <option name="MAIN_CLASS_NAME" value="com.tan.annotation.BeanTest" />
+      <option name="METHOD_NAME" value="testSerializingWithJsonValue" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BeanTest.testSerializingWithJsonValue" />
+        <item itemvalue="JUnit.BeanTest.testSerializingWithJsonIgnoreProperties" />
+        <item itemvalue="JUnit.BeanTest.testDeSerializingWithJsonIgnore" />
+        <item itemvalue="JUnit.BeanTest.testSerializingWithJsonIgnore" />
         <item itemvalue="Application.LeanKafkaApplication" />
-        <item itemvalue="JUnit.UserMapperTest.test" />
-        <item itemvalue="Shell Script.send-msg-2.sh" />
-        <item itemvalue="JUnit.KafkaMsgSendTest.sendMsg" />
-        <item itemvalue="Spring Boot.LeanKafkaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +211,12 @@
       <workItem from="1718437257327" duration="4425000" />
       <workItem from="1718459343749" duration="5020000" />
       <workItem from="1718500013759" duration="6129000" />
-      <workItem from="1718522139855" duration="6363000" />
+      <workItem from="1718522139855" duration="6422000" />
+      <workItem from="1718618955989" duration="50000" />
+      <workItem from="1718619130995" duration="12000" />
+      <workItem from="1718983271840" duration="364000" />
+      <workItem from="1718983643319" duration="511000" />
+      <workItem from="1718984168639" duration="611000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD][lean-kafka] 新增kafka生产和消费部分示例">
       <option name="closed" value="true" />
@@ -234,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718505814753</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[add][lean-kafka] 解决启动和停止消费者的问题">
+      <option name="closed" value="true" />
+      <created>1718543801271</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718543801271</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +280,8 @@
     <MESSAGE value="[ADD][lean-kafka] 新增kafka多个消费者" />
     <MESSAGE value="[ADD][lean-kafka] 新增事务性控制" />
     <MESSAGE value="[Question][lean-kafka] 获取不到已注册的监听器，待解决" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Question][lean-kafka] 获取不到已注册的监听器，待解决" />
+    <MESSAGE value="[add][lean-kafka] 解决启动和停止消费者的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add][lean-kafka] 解决启动和停止消费者的问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
