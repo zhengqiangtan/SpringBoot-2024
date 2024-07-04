@@ -1,0 +1,52 @@
+#spring:
+#  server:
+#    port: 8080
+#  application:
+#    name: SPRING-JPA-APP
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:7001/springboot-admin-server/
+#        username: admin
+#        password: admin
+#  devtools:
+#    restart:
+#      enabled: true # 启用自动重启功能
+#      exclude:
+#        - "**/static/**"
+#        - "**/public/**"
+#        - "**/resources/**"
+#        - "**/META-INF/**"
+#        - "**/test/**"
+#    liveReload:
+#      enabled: true # 启用自动刷新功能
+#
+## 配置管理端点
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*' # 暴露所有端点
+#  endpoint:
+#    health:
+#      show-details: always # 显示详细信息
+#logging:
+#  file: admin.log # 日志文件名
+
+
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:7001/springboot-admin-server
+        username: admin  # 服务器端配置的用户名
+        password: admin  # 服务器端配置的密码
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

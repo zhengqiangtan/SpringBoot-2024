@@ -1,0 +1,129 @@
+2024-07-04 22:41:25.524 DEBUG 29593 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2024-07-04 22:41:25.610  INFO 29593 --- [restartedMain] com.tzq.jpa.JpaApplication               : Starting JpaApplication on MacBook-Pro-2.local with PID 29593 (/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-jpa/target/classes started by mac in /Users/mac/workspace/myworkspace/SpringBoot-2024)
+2024-07-04 22:41:25.612  INFO 29593 --- [restartedMain] com.tzq.jpa.JpaApplication               : No active profile set, falling back to default profiles: default
+2024-07-04 22:41:25.653  INFO 29593 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-04 22:41:25.653  INFO 29593 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-04 22:41:26.543  WARN 29593 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-04 22:41:26.562  INFO 29593 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-04 22:41:26.563  INFO 29593 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 910 ms
+2024-07-04 22:41:26.747  INFO 29593 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:41:26.899  INFO 29593 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-04 22:41:26.941  INFO 29593 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-07-04 22:41:26.951  INFO 29593 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-07-04 22:41:27.030  INFO 29593 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2024-07-04 22:41:27.035  INFO 29593 --- [restartedMain] com.tzq.jpa.JpaApplication               : Started JpaApplication in 1.796 seconds (JVM running for 2.392)
+2024-07-04 22:41:30.729  INFO 29593 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-04 22:41:30.730  INFO 29593 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-04 22:41:30.738  INFO 29593 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-07-04 22:41:53.481  INFO 29593 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:41:53.483  INFO 29593 --- [Thread-8] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-04 22:41:53.647  INFO 29593 --- [restartedMain] com.tzq.jpa.JpaApplication               : Starting JpaApplication on MacBook-Pro-2.local with PID 29593 (/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-jpa/target/classes started by mac in /Users/mac/workspace/myworkspace/SpringBoot-2024)
+2024-07-04 22:41:53.647  INFO 29593 --- [restartedMain] com.tzq.jpa.JpaApplication               : No active profile set, falling back to default profiles: default
+2024-07-04 22:41:53.848  WARN 29593 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-04 22:41:53.849  INFO 29593 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-04 22:41:53.849  INFO 29593 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 199 ms
+2024-07-04 22:41:53.899  INFO 29593 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:41:53.936  INFO 29593 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-04 22:41:53.952  INFO 29593 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2024-07-04 22:41:53.953  INFO 29593 --- [restartedMain] com.tzq.jpa.JpaApplication               : Started JpaApplication in 0.336 seconds (JVM running for 29.309)
+2024-07-04 22:41:53.955  INFO 29593 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-04 22:41:55.355  INFO 29593 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:41:55.503  INFO 29593 --- [restartedMain] com.tzq.jpa.JpaApplication               : Starting JpaApplication on MacBook-Pro-2.local with PID 29593 (/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-jpa/target/classes started by mac in /Users/mac/workspace/myworkspace/SpringBoot-2024)
+2024-07-04 22:41:55.503  INFO 29593 --- [restartedMain] com.tzq.jpa.JpaApplication               : No active profile set, falling back to default profiles: default
+2024-07-04 22:41:55.677  WARN 29593 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-04 22:41:55.678  INFO 29593 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-04 22:41:55.678  INFO 29593 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 173 ms
+2024-07-04 22:41:55.721  INFO 29593 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:41:55.757  INFO 29593 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-04 22:41:55.772  INFO 29593 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2024-07-04 22:41:55.773  INFO 29593 --- [restartedMain] com.tzq.jpa.JpaApplication               : Started JpaApplication in 0.291 seconds (JVM running for 31.129)
+2024-07-04 22:41:55.774  INFO 29593 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-04 22:43:36.445  INFO 29593 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:43:42.095  INFO 29619 --- [restartedMain] com.tzq.jpa.JpaApplication               : Starting JpaApplication on MacBook-Pro-2.local with PID 29619 (/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-jpa/target/classes started by mac in /Users/mac/workspace/myworkspace/SpringBoot-2024)
+2024-07-04 22:43:42.097  INFO 29619 --- [restartedMain] com.tzq.jpa.JpaApplication               : No active profile set, falling back to default profiles: default
+2024-07-04 22:43:42.137  INFO 29619 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-04 22:43:42.138  INFO 29619 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-04 22:43:43.317  WARN 29619 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-04 22:43:43.341  INFO 29619 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-04 22:43:43.341  INFO 29619 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1203 ms
+2024-07-04 22:43:43.675  INFO 29619 --- [restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2024-07-04 22:43:43.873  INFO 29619 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:43:44.130  INFO 29619 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2024-07-04 22:43:44.210  INFO 29619 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-04 22:43:44.218  INFO 29619 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2024-07-04 22:43:44.283  INFO 29619 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-07-04 22:43:44.292  INFO 29619 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-07-04 22:43:44.419  INFO 29619 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2024-07-04 22:43:44.423  INFO 29619 --- [restartedMain] com.tzq.jpa.JpaApplication               : Started JpaApplication in 2.666 seconds (JVM running for 3.228)
+2024-07-04 22:43:44.513  INFO 29619 --- [RMI TCP Connection(1)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-04 22:43:44.514  INFO 29619 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-04 22:43:44.524  INFO 29619 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2024-07-04 22:43:44.542  WARN 29619 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application failed to registered itself as Application(name=SPRING-JPA-APP, managementUrl=http://localhost:8080/actuator, healthUrl=http://localhost:8080/actuator/health, serviceUrl=http://localhost:8080/). Response: <302,[X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"http://localhost:7001/springboot-admin-server/login", Content-Length:"0", Date:"Thu, 04 Jul 2024 14:43:44 GMT"]>. Further attempts are logged on DEBUG level
+2024-07-04 22:48:30.490  INFO 29619 --- [Thread-10] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2024-07-04 22:48:30.491  INFO 29619 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:48:30.494  INFO 29619 --- [Thread-10] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-04 22:48:30.702  INFO 29619 --- [restartedMain] com.tzq.jpa.JpaApplication               : Starting JpaApplication on MacBook-Pro-2.local with PID 29619 (/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-jpa/target/classes started by mac in /Users/mac/workspace/myworkspace/SpringBoot-2024)
+2024-07-04 22:48:30.702  INFO 29619 --- [restartedMain] com.tzq.jpa.JpaApplication               : No active profile set, falling back to default profiles: default
+2024-07-04 22:48:31.013  WARN 29619 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-04 22:48:31.014  INFO 29619 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-04 22:48:31.014  INFO 29619 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 310 ms
+2024-07-04 22:48:31.100  INFO 29619 --- [restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2024-07-04 22:48:31.143  INFO 29619 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:48:31.227  INFO 29619 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2024-07-04 22:48:31.245  INFO 29619 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-04 22:48:31.248  INFO 29619 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2024-07-04 22:48:31.280  INFO 29619 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2024-07-04 22:48:31.281  INFO 29619 --- [restartedMain] com.tzq.jpa.JpaApplication               : Started JpaApplication in 0.606 seconds (JVM running for 290.103)
+2024-07-04 22:48:31.284  INFO 29619 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-04 22:48:31.288  WARN 29619 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application failed to registered itself as Application(name=SPRING-JPA-APP, managementUrl=http://localhost:8080/actuator, healthUrl=http://localhost:8080/actuator/health, serviceUrl=http://localhost:8080/). Response: <302,[X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"http://localhost:7001/springboot-admin-server/login", Content-Length:"0", Date:"Thu, 04 Jul 2024 14:48:31 GMT"]>. Further attempts are logged on DEBUG level
+2024-07-04 22:49:19.389  INFO 29619 --- [Thread-25] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2024-07-04 22:49:19.391  INFO 29619 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:49:21.219  INFO 29665 --- [restartedMain] com.tzq.jpa.JpaApplication               : Starting JpaApplication on MacBook-Pro-2.local with PID 29665 (/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-jpa/target/classes started by mac in /Users/mac/workspace/myworkspace/SpringBoot-2024)
+2024-07-04 22:49:21.222  INFO 29665 --- [restartedMain] com.tzq.jpa.JpaApplication               : No active profile set, falling back to default profiles: default
+2024-07-04 22:49:21.267  INFO 29665 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-04 22:49:21.268  INFO 29665 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-04 22:49:22.540  WARN 29665 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-04 22:49:22.566  INFO 29665 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-04 22:49:22.567  INFO 29665 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1299 ms
+2024-07-04 22:49:22.937  INFO 29665 --- [restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2024-07-04 22:49:23.136  INFO 29665 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-07-04 22:49:23.400  INFO 29665 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2024-07-04 22:49:23.476  INFO 29665 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-04 22:49:23.483  INFO 29665 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2024-07-04 22:49:23.550  INFO 29665 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-07-04 22:49:23.557  INFO 29665 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-07-04 22:49:23.712  INFO 29665 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2024-07-04 22:49:23.716  INFO 29665 --- [restartedMain] com.tzq.jpa.JpaApplication               : Started JpaApplication in 2.9 seconds (JVM running for 3.498)
+2024-07-04 22:49:23.810  WARN 29665 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application failed to registered itself as Application(name=SPRING-JPA-APP, managementUrl=http://localhost:8080/actuator, healthUrl=http://localhost:8080/actuator/health, serviceUrl=http://localhost:8080/). Response: <302,[X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"http://localhost:7001/springboot-admin-server/login", Content-Length:"0", Date:"Thu, 04 Jul 2024 14:49:22 GMT"]>. Further attempts are logged on DEBUG level
+2024-07-04 22:49:24.061  INFO 29665 --- [RMI TCP Connection(1)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-04 22:49:24.062  INFO 29665 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-04 22:49:24.069  INFO 29665 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-07-04 22:57:24.076  INFO 29665 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as a973ff14be49
+2024-07-04 22:58:24.270  INFO 29665 --- [XNIO-1 task-87] io.undertow.servlet                      : jolokia-actuator-endpoint: No access restrictor found, access to any MBean is allowed
+2024-07-04 23:01:59.549  INFO 29665 --- [Thread-13] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2024-07-04 23:01:59.550  INFO 29665 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-07-04 23:01:59.552  INFO 29665 --- [Thread-13] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-04 23:02:34.534  INFO 29808 --- [restartedMain] com.tzq.jpa.JpaApplication               : Starting JpaApplication on MacBook-Pro-2.local with PID 29808 (/Users/mac/workspace/myworkspace/SpringBoot-2024/lean-jpa/target/classes started by mac in /Users/mac/workspace/myworkspace/SpringBoot-2024)
+2024-07-04 23:02:34.536  INFO 29808 --- [restartedMain] com.tzq.jpa.JpaApplication               : No active profile set, falling back to default profiles: default
+2024-07-04 23:02:34.579  INFO 29808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-04 23:02:34.579  INFO 29808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-04 23:02:35.816  WARN 29808 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-07-04 23:02:35.840  INFO 29808 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-07-04 23:02:35.840  INFO 29808 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1261 ms
+2024-07-04 23:02:36.158  INFO 29808 --- [restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2024-07-04 23:02:36.339  INFO 29808 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-07-04 23:02:36.566  INFO 29808 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2024-07-04 23:02:36.632  INFO 29808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-04 23:02:36.638  INFO 29808 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2024-07-04 23:02:36.701  INFO 29808 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-07-04 23:02:36.709  INFO 29808 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-07-04 23:02:36.835  INFO 29808 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2024-07-04 23:02:36.839  INFO 29808 --- [restartedMain] com.tzq.jpa.JpaApplication               : Started JpaApplication in 2.698 seconds (JVM running for 3.313)
+2024-07-04 23:02:36.934  INFO 29808 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as a973ff14be49
+2024-07-04 23:02:36.949  INFO 29808 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-04 23:02:36.949  INFO 29808 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-04 23:02:36.955  INFO 29808 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-07-04 23:04:48.495  INFO 29808 --- [XNIO-1 task-33] io.undertow.servlet                      : jolokia-actuator-endpoint: No access restrictor found, access to any MBean is allowed
+2024-07-04 23:06:52.101  INFO 29808 --- [Thread-13] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2024-07-04 23:06:52.102  INFO 29808 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-07-04 23:06:52.105  INFO 29808 --- [Thread-13] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'

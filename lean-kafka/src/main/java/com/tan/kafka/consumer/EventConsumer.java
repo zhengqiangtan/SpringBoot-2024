@@ -57,9 +57,11 @@ public class EventConsumer {
      * 写法 4：
      * 1. 设置 ID 方便启动、和停止消费者
      * 2.可以指定 autoStartup 属性为 false，手动启动消费者,默认情况下是 true
+     *
      * @param event
      */
-    @KafkaListener(id = "eventListener", topics = "events_test", groupId = "default", autoStartup = "true")
+    @KafkaListener(id = "eventListener", topics = "events_test",
+            groupId = "default", autoStartup = "true", concurrency = "2")
     public void consume5(Event event) {
         System.out.println("[event-listener] consumed event: " + event);
     }

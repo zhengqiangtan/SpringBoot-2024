@@ -1,4 +1,4 @@
-package com.tan.redis;
+package com.tzq.admin;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -1,0 +1,11 @@
+server:
+  port: 7001
+  servlet:
+    context-path: /springboot-admin-server
+spring:
+  application:
+    name: springboot-admin-server
+  security:
+    user:
+      name: admin
+      password: admin

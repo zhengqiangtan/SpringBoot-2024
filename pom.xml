@@ -13,6 +13,8 @@
     <module>lean-kafka</module>
     <module>lean_annotation</module>
     <module>lean-redis</module>
+    <module>lean-jpa</module>
+    <module>learn-springboot-admin</module>
   </modules>
 
   <properties>

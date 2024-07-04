@@ -1,0 +1,2 @@
+https://blog.csdn.net/zhenghongcs/article/details/102814823?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-102814823-blog-120430122.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-102814823-blog-120430122.235%5Ev43%5Epc_blog_bottom_relevance_base7&utm_relevant_index=1
+可以结合 eureka来做服务注册发现
