@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-boot-redis-demo
+  #  redis:
+  #    host: 127.0.0.1
+  #    port: 6379
+  #    password:
+  #    timeout: 60000
+  redisson:
+    #  单机模式
+    host: 127.0.0.1
+    port: 6379
+#    password:
+    # 哨兵模式
+    sentinel:
+      master: mymaster
+      nodes:
+    # 集群模式
+    cluster:
+
+

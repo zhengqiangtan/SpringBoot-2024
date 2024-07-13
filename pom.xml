@@ -15,6 +15,7 @@
     <module>lean-redis</module>
     <module>lean-jpa</module>
     <module>learn-springboot-admin</module>
+      <module>lean-es</module>
   </modules>
 
   <properties>
